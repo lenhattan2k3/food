@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AppOrder</string>
+    <string name="dish_image">Dish Image</string> <!-- Thêm dòng này nếu chưa có -->
+</resources>

@@ -1,0 +1,36 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.apporder">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- Permissions for storage access -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Permissions for Internet if Firebase is used -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Permissions for accessing network state -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="App Order"
+        android:theme="@style/Theme.AppCompat">
+
+        <!-- LoginActivity làm màn hình chính với intent-filter -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Các Activity khác -->
+        <activity android:name=".RegisterActivity" android:exported="true" />
+        <activity android:name=".AdminActivity" android:exported="true" />
+        <activity android:name=".UserActivity" android:exported="true" />
+        <activity android:name=".MainActivity" android:exported="true" />
+    </application>
+</manifest>

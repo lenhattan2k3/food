@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Tên món ăn -->
+    <EditText
+        android:id="@+id/dishNameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_a"
+        android:hint="Tên món ăn"
+        android:inputType="textCapWords"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <!-- Giá món ăn -->
+    <EditText
+        android:id="@+id/dishPriceField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_a"
+        android:hint="Giá món ăn"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <!-- Địa chỉ -->
+    <EditText
+        android:id="@+id/dishAddressField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_a"
+        android:hint="Địa chỉ"
+        android:inputType="textCapSentences"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <!-- Thông tin món ăn -->
+    <EditText
+        android:id="@+id/dishInfoField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_a"
+        android:hint="Thông tin món ăn"
+        android:inputType="textCapSentences|textMultiLine"
+        android:minHeight="100dp"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <!-- Chọn hình ảnh món ăn -->
+    <Button
+        android:id="@+id/selectImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/black"
+        android:text="Chọn hình ảnh"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+    <!-- Hiển thị hình ảnh món ăn đã chọn -->
+    <ImageView
+        android:id="@+id/dishImageView"
+        android:layout_width="378dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Dish Image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_intro1" />
+
+    <!-- Nút thêm món ăn -->
+    <Button
+        android:id="@+id/addDishButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/black"
+        android:padding="12dp"
+        android:text="Thêm món ăn"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+    <!-- RecyclerView hiển thị danh sách món ăn -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dishListRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
